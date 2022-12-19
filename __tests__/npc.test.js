@@ -6,11 +6,11 @@ describe('NPC', () => {
     expect(npc.name).toEqual('test npc');
     expect(npc.health).toEqual(100);
     expect(npc.level).toEqual(10);
-  });/* 
+  });
   test('Passing nothing to constructor should use default values.', () => {
-    const player = new Player();
-    expect(player.name).toEqual('Player');
-    expect(player.health).toEqual(100);
-    expect(player.level).toEqual(1);
-  }); */
+    const npc = new NPC();
+    expect(npc.name).toEqual('Biff');
+    expect(npc.health).toEqual(100);
+    expect(npc.level).toEqual(1);
+  });
 });
