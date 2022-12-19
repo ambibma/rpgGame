@@ -6,6 +6,11 @@ describe('Entity', () => {
     expect(entity.name).toEqual('test object');
     expect(entity.health).toEqual(100);
   });
+  test('Passing nothing to constructor should use default values.', () => {
+    const entity = new Entity();
+    expect(entity.name).toEqual('Something');
+    expect(entity.health).toEqual(1);
+  });
 })
 
 describe('Mobile', () => {
