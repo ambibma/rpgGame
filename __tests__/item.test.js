@@ -6,4 +6,9 @@ describe('Item', () => {
     expect(item.name).toEqual('test object');
     expect(item.health).toEqual(100);
   });
-})
+  test('Passing nothing to constructor should use default values.', () => {
+    const item = new Item();
+    expect(item.name).toEqual('An item');
+    expect(item.health).toEqual(10);
+  });
+});

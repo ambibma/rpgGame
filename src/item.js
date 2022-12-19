@@ -9,7 +9,7 @@ const ITEM_SLOTS = Object.freeze({
 });
 
 class Item extends Entity {
-  constructor(name='An item', health=10) {
+  constructor(name, health) {
     super(name, health);
   }
 }
