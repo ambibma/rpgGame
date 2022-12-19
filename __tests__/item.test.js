@@ -1,10 +1,11 @@
 import { Item, Container } from "../src/item.js";
 
 describe('Item', () => {
-  test('It should return an Item object with a name and health value.', () => {
-    const item = new Item('test object', 100);
+  test('It should return an Item object with name, health, and level values.', () => {
+    const item = new Item('test object', 100, 10);
     expect(item.name).toEqual('test object');
     expect(item.health).toEqual(100);
+    expect(item.level).toEqual(10);
   });
   test('Passing nothing to constructor should use default values.', () => {
     const item = new Item();

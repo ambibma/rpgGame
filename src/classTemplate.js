@@ -1,9 +1,10 @@
 export { Entity, Mobile };
 
 class Entity {
-  constructor(name='Something', health=1){
+  constructor(name='Something', health=1, level=1){
     this.name = name;
     this.health = health;
+    //this.level = level;
   }
 }
 

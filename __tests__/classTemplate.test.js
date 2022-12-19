@@ -1,10 +1,11 @@
 import { Entity, Mobile } from "../src/classTemplate";
 
 describe('Entity', () => {
-  test('It should return an Entity object with a name and health value.', () => {
-    const entity = new Entity('test object', 100);
+  test('It should return an Entity object with name, health, and level values.', () => {
+    const entity = new Entity('test object', 100, 10);
     expect(entity.name).toEqual('test object');
     expect(entity.health).toEqual(100);
+    expect(entity.level).toEqual(10);
   });
   test('Passing nothing to constructor should use default values.', () => {
     const entity = new Entity();
@@ -14,10 +15,11 @@ describe('Entity', () => {
 })
 
 describe('Mobile', () => {
-  test('It should return a Mobile object with a name and health value.', () => {
+  test('It should return a Mobile object with name, health, and level values.', () => {
     const mobile = new Mobile('test mob', 100);
     expect(mobile.name).toEqual('test mob');
     expect(mobile.health).toEqual(100);
+    expect(mobile.health).toEqual(10);
   });
   test('Passing nothing to constructor should use default values.', () => {
     const mobile = new Mobile();
