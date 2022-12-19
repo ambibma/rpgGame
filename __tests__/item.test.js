@@ -19,4 +19,8 @@ describe('Container', () => {
     expect(container.name).toEqual('test object');
     expect(container.health).toEqual(100);
   });
+  test('A new container should have an empty inventory by default.', () => {
+    const container = new Container();
+    expect(container.inventory).toHaveLength(0);
+  });
 });

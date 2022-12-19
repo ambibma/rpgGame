@@ -1,6 +1,6 @@
 import { Entity } from "../src/classTemplate";
 
-export {Item, Container}
+export { Item, Container }
 
 const ITEM_SLOTS = Object.freeze({
   HEAD: "Head",
@@ -17,5 +17,6 @@ class Item extends Entity {
 class Container extends Item {
   constructor(name, health) {
     super(name, health);
+    //this.inventory = [];
   }
 }
