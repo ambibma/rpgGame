@@ -10,12 +10,12 @@ const ITEM_SLOTS = Object.freeze({
 
 class Item extends Entity {
   constructor(name='An item', health=10) {
-    //super(name, health);
+    super(name, health);
   }
 }
 
 class Container {
   constructor() {
-    
+
   }
 }
