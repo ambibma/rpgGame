@@ -2,8 +2,8 @@ export default class Entity {
   constructor(name, health){
     // this.inventory = [];
     // this.action
-    this.name = name;
-    this.health = health;
+    //this.name = name;
+    //this.health = health;
   }
 }
 //health: 100
