@@ -19,6 +19,11 @@ describe('Mobile', () => {
     expect(mobile.name).toEqual('test mob');
     expect(mobile.health).toEqual(100);
   });
+  test('Passing nothing to constructor should use default values.', () => {
+    const mobile = new Mobile();
+    expect(mobile.name).toEqual('Biff');
+    expect(mobile.health).toEqual(100);
+  });
   test('A new mobile should have an empty inventory by default.', () => {
     const mobile = new Mobile('test mob', 100);
     expect(mobile.inventory).toHaveLength(0);
