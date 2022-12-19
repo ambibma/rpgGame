@@ -1,4 +1,4 @@
-import { Item } from "../src/item.js";
+import { Item, Container } from "../src/item.js";
 
 describe('Item', () => {
   test('It should return an Item object with a name and health value.', () => {
@@ -10,5 +10,13 @@ describe('Item', () => {
     const item = new Item();
     expect(item.name).toEqual('An item');
     expect(item.health).toEqual(10);
+  });
+});
+
+describe('Container', () => {
+  test('It should return an Item object with a name and health value.', () => {
+    const container = new Container('test object', 100);
+    expect(container.name).toEqual('test object');
+    expect(container.health).toEqual(100);
   });
 });

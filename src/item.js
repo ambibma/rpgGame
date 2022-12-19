@@ -15,7 +15,7 @@ class Item extends Entity {
 }
 
 class Container {
-  constructor() {
-
+  constructor(name, health) {
+    
   }
 }
