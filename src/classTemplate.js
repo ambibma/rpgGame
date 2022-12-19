@@ -1,16 +1,16 @@
 export { Entity, Mobile };
 
 class Entity {
-  constructor(name='Something', health=1, level=1){
+  constructor(level=1, name='Something', health=1){
+    this.level = level;
     this.name = name;
     this.health = health;
-    //this.level = level;
   }
 }
 
 class Mobile extends Entity {
-  constructor(name='Biff', health=100) {
-    super(name, health);
+  constructor(level=1, name='Biff', health=100) {
+    super(level, name, health);
     this.inventory = [];
   }
 }

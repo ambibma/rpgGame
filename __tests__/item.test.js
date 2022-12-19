@@ -2,7 +2,7 @@ import { Item, Container } from "../src/item.js";
 
 describe('Item', () => {
   test('It should return an Item object with name, health, and level values.', () => {
-    const item = new Item('test object', 100, 10);
+    const item = new Item(10, 'test object', 100);
     expect(item.name).toEqual('test object');
     expect(item.health).toEqual(100);
     expect(item.level).toEqual(10);
@@ -15,10 +15,11 @@ describe('Item', () => {
 });
 
 describe('Container', () => {
-  test('It should return an Item object with a name and health value.', () => {
-    const container = new Container('test object', 100);
+  test('It should return an Item object with name, health, and level values.', () => {
+    const container = new Container(10, 'test object', 100);
     expect(container.name).toEqual('test object');
     expect(container.health).toEqual(100);
+    expect(container.level).toEqual(10);
   });
   test('A new container should have an empty inventory by default.', () => {
     const container = new Container();

@@ -9,14 +9,14 @@ const ITEM_SLOTS = Object.freeze({
 });
 
 class Item extends Entity {
-  constructor(name='An item', health=10) {
-    super(name, health);
+  constructor(level=1, name='An item', health=10) {
+    super(level, name, health);
   }
 }
 
 class Container extends Item {
-  constructor(name, health) {
-    super(name, health);
+  constructor(level, name, health) {
+    super(level, name, health);
     this.inventory = [];
   }
 }
