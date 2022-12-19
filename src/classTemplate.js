@@ -10,7 +10,7 @@ class Entity {
 class Mobile extends Entity {
   constructor(name, health) {
     super(name, health);
-    //self.inventory = []
+    this.inventory = [];
   }
 }
 //health: 100
