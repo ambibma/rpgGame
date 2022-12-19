@@ -7,4 +7,10 @@ describe('Item', () => {
     expect(player.health).toEqual(100);
     expect(player.level).toEqual(10);
   });
+  test('Passing nothing to constructor should use default values.', () => {
+    const player = new Player();
+    expect(player.name).toEqual('Player');
+    expect(player.health).toEqual(100);
+    expect(player.level).toEqual(1);
+  });
 });

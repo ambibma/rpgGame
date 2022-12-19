@@ -15,7 +15,7 @@ class Item extends Entity {
 }
 
 class Container extends Item {
-  constructor(level=1, name='A container', health='10') {
+  constructor(level=1, name='A container', health=10) {
     super(level, name, health);
     this.inventory = [];
   }
