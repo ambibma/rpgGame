@@ -13,12 +13,13 @@ describe('Room', () =>{
     expect(room.inventory).toHaveLength(0);
 });
   test('it should return a room with greg inside the inventory', ()=>{
-    roomTemplate.inventory = [{
+    roomTemplate.inventory.push({
       type: 'npc',
       level: 1,
       name: 'Greg',
-      health: 45
-      }]
+      health: 45,
+      inventory: []
+      })
   room = new Room(roomTemplate);
   expect(room.inventory[0].name).toEqual('Greg');
 });
