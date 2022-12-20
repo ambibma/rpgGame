@@ -3,6 +3,7 @@ import { Entity } from "../src/classTemplate";
 export default class Room extends Entity {
   constructor(roomTemplate) {
     super(roomTemplate.level, roomTemplate.name, roomTemplate.health);
+    this.inventory = [];
   }
   addToRoom(entity){
     this.inventory.push(entity);
