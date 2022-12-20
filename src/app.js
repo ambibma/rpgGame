@@ -1,11 +1,10 @@
 import { npcs } from "../src/npcs.js";
 import { locations } from "../src/locations.js";
-import Room from "../src/room.js"
+import { spawnPlayer, spawnNPC, spawnRoom } from "../src/spawn.js"
 
 
-const rooms = locations.santaCruz.rooms.map((roomTemplate) => new Room(roomTemplate));
+const rooms = locations.santaCruz.rooms.map(spawnRoom);
 console.log(rooms);
-
 
 
 /* let currentLocation = locations.santaCruz.rooms[0];
