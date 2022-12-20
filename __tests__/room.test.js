@@ -1,5 +1,4 @@
 import Room from "../src/room.js";
-import npcs from "../src/npcs.js";
 
 describe('Room', () =>{
   let room;
@@ -7,12 +6,21 @@ describe('Room', () =>{
     name: 'The Ash Tray',
     level: 1,
     health: 1000,
-    inventory: [
-    ]
+    inventory: []
   };
   test('it should return a room object with an inventory', ()=>{
     room = new Room(roomTemplate);
     expect(room.inventory).toHaveLength(0);
+});
+  test('it should return a room with greg inside the inventory', ()=>{
+    roomTemplate.inventory = [{
+      type: 'npc',
+      level: 1,
+      name: 'Greg',
+      health: 45
+      }]
+  room = new Room(roomTemplate);
+  expect(room.inventory[0].name).toEqual('Greg');
 });
 });
 
