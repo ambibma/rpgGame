@@ -7,25 +7,39 @@
 
 <body>
   <h1>Vampire Rpg</h1>
-  <div class="gameContainer">
-    <div class="box startGamePage">
-      <button type="button">Start Game</button>
-    </div>
-    <div id = "playerCreator" class="box characterCreator hidden">
-    </div>
-    <div class="box gameMessages hidden">
-      <p><span id="gameText"></span></p>
+  
+  <div id="page">
+    <img src="https://stryvemarketing.com/wp-content/uploads/2016/04/flamingline.gif">
+    
+    
+    <div class="gameContainer">
+      <div class="box startGamePage">
+        <button id='start-button' type="button">Start Game</button>
+      </div>
+      <div id = "playerCreator" class="box characterCreator hidden">
+          <p>Create your character!</p>
+          <input type="text" id="nameInput">    
+        <button id='readyButton' type="button">Ready!</button>
+      </div>
+      <div id="narrator"class="box gameMessages hidden">
+        <h2><span id=currentLocation></span></h2>
+        <p><span id="gameText"></span></p>
+        <button type="button"><span id="button1"></span></button>
+        <button type="button"><span id="button1"></span></button>
+        <button type="button"><span id="button1"></span></button>
+      </div>
+      <div id='characterSheet'class="box displayCharacter hidden">
+        <p>Name: <span id="characterName"></span></p>
+        <p>Health: <span id="characterHealth"></span></p>
+        <p>Level: <span id="characterLevel"></span></p>
+        <p>Inventory <span id="characterInventory"></span></p>
+      </div>
     </div>
     <div class="box loseMessage hidden">
       <p>You died!</p>
     </div>
-    <div class="box displayCharacter hidden">
-      <p>Name: <span id="chracterName"></span></p>
-      <p>Health: <span id="chracterHealth"></span></p>
-      <p>Level: <span id="chracterLevel"></span></p>
-      <p>Inventory <span id="chracterInventory"></span></p>
-    </div>
   </div>
+  
 </body>
 
 </html>

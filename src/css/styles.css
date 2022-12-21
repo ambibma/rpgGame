@@ -1,3 +1,11 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+  font-size: 20;
+}
+
 html{
   background-color: black;
   color: white;
@@ -9,8 +17,18 @@ html{
 
 .gameContainer{
   display: flex;
+  flex-direction: column;
 } 
 .box{
   flex:1;
   border: 1px solid white;
+  background-color: rgba(0,0,0,.4);
+}
+
+#page {
+  background-image: url(https://gamingtrend.com/wp-content/uploads/2020/03/vamp-1536x864.jpg);
+  height:864px;
+}
+img{
+  mix-blend-mode:color-dodge;
 }
