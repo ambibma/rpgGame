@@ -14,6 +14,16 @@ export const locations = {
         ]
       },
       {
+        name: 'Creepy Ass House',
+        level: 1,
+        health: 1000,
+        inventory:  [
+          npcs.demon1,
+          npcs.demon2,
+          npcs.demon3
+        ]
+      },
+      {
         name: 'The Bus Stop',
         level: 1,
         health: 1000,

@@ -1,0 +1,16 @@
+html{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+.gameContainer{
+  display: flex;
+} 
+.box{
+  flex:1;
+  border: 1px solid white;
+}
